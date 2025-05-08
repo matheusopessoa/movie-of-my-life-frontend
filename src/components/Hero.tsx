@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
-import { Film, Star, Users } from "lucide-react";
+import { Film, Star, Users, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -19,7 +20,7 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl mx-auto text-center">
-          <Film className="w-12 h-12 text-popcorn mx-auto mb-6" />
+          <img src="/icone.ico" alt="Favicon" className="w-12 h-12 mx-auto mb-6" />
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-shadow leading-tight">
             <span className="text-ivory">Sua história merece um </span>
@@ -31,13 +32,15 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col items-center space-y-4">
-            <Button 
-              className="bg-coral hover:bg-coral/90 text-ivory text-lg px-8 py-6 rounded-full animate-pulse-soft"
-              size="lg"
-              onClick={() => document.getElementById('como-funciona')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Descubra Seu Filme
-            </Button>
+            <Link to="/membros">
+              <Button 
+                className="bg-coral hover:bg-coral/90 text-ivory text-lg px-8 py-6 rounded-full animate-pulse-soft flex items-center gap-2"
+                size="lg"
+              >
+                <Sparkles className="w-5 h-5" />
+                Descubra Seu Filme
+              </Button>
+            </Link>
             
             <Button 
               className="bg-transparent hover:bg-midnight/40 text-popcorn border border-popcorn/30 text-sm px-6 py-2 rounded-full"

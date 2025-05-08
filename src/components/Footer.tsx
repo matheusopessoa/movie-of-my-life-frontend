@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div>
             <a href="/" className="flex items-center gap-2 mb-4">
-              <Film className="h-6 w-6 text-popcorn" />
-              <span className="text-popcorn font-poppins text-xl font-bold">My<span className="text-coral">Movie</span>Match</span>
+            <img src="/icone.ico" alt="Favicon" className="w-12 h-12 mx-auto mb-6" />
+            <span className="text-popcorn font-poppins text-xl font-bold">My<span className="text-coral">Movie</span>Match</span>
             </a>
             
             <p className="text-slate text-sm mb-6">

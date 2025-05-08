@@ -67,9 +67,7 @@ const HowItWorks = () => {
 
               <div className="space-y-4">
                 <div className="bg-midnight/60 p-4 rounded-lg relative">
-                  <Badge variant="outline" className="absolute -top-2 right-2 border-white/20 text-slate text-xs">
-                    Grátis
-                  </Badge>
+
                   <h4 className="text-sm font-semibold text-popcorn mb-2">Versão Gratuita</h4>
                   <p className="text-sm text-ivory/70">{step.free}</p>
                   <div className="mt-2 bg-midnight/80 py-1 px-2 rounded text-xs text-ivory/60 flex items-center justify-center">
